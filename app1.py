@@ -553,7 +553,7 @@ class StreamlitApp:
     def _setup_ui(self):
         """Configuration de l'interface utilisateur"""
         st.title("🔌 Prédiction de Production Électrique")
-        st.markdown("### Application ML Professionnelle avec Architecture Améliorée")
+        st.markdown("### Application de Machine learning (Projet Type d'apprentissage IA)")
 
         # Description du contexte
         st.markdown("""
@@ -593,7 +593,7 @@ class StreamlitApp:
         col4.metric("Cible", dataset_info.target)
 
         # Visualisations
-        with st.expander("🔍 Analyse Exploratoire", expanded=True):
+        with st.expander("🔍 Analyse Exploratoire des données", expanded=True):
             self.visualizer.plot_data_overview(data)
             self.visualizer.plot_correlation_matrix(data)
             self.visualizer.plot_feature_distributions(data)
